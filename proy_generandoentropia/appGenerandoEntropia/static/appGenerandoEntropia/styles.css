@@ -1,0 +1,102 @@
+.videoText_p, .videoText_h {
+  color: white;
+  text-align: center;
+}
+
+.videoText_h {
+  font-family: "Permanent Marker", cursive;
+  font-size: 8vw;
+}
+
+.videoText_p {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2vw;
+}
+
+.btnC, .btnB, .btnA {
+  display: block;
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+
+.btnA {
+  background-color: #70c7be !important;
+}
+
+.btnB {
+  background-color: #7f92cf !important;
+}
+
+.btnC {
+  background-color: #d8712c !important;
+}
+
+.ParallaxImage {
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.ParallaxImage h1 {
+  font-weight: 700;
+  font-size: 76px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.bg1 {
+  background-image: url("https://i.blogs.es/5efe2c/cap_001/450_1000.jpg");
+}
+
+.bg2 {
+  background-image: url("https://ichef.bbci.co.uk/news/640/cpsprodpb/F403/production/_109476426_jheison3.png");
+}
+
+.bg3 {
+  background-image: url("https://ichef.bbci.co.uk/news/800/cpsprodpb/35F4/production/_116221831_mediaitem116221830.jpg");
+}
+
+.ParallaxContent {
+  background: none repeat scroll 0 0 #2581e8;
+  padding: 42px 0;
+  color: #FFF;
+}
+
+.ParallaxContent h2 {
+  color: #FFF;
+}
+
+.ParallaxVideo {
+  height: 500px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.ParallaxVideo video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blurred {
+  filter: blur(5px);
+}
+
+.tabulador {
+  padding-left: 5em;
+}
+
+/*# sourceMappingURL=styles.css.map */

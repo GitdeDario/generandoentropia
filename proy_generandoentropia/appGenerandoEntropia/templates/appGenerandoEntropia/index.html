@@ -1,0 +1,114 @@
+{% extends "appGenerandoEntropia/layout.html" %}
+{% load static %}
+
+{% block title %}{% endblock %}
+{% block body %}
+
+<div class="ParallaxVideo">
+    <video autoplay muted loop delay5s class="blurred" style="width: 300px;">
+        <!--<source src="{% static 'appGenerandoEntropia/images/videos/slowFire.mp4' %}" type="video/mp4">-->
+        <source src="{% static 'appGenerandoEntropia/images/videos/fireplace.mp4' %}" type="video/mp4">
+    </video>
+    <h1 class="videoText_h">Generando Entropía.</h1> <br/>
+    <p class="videoText_p">Una página que sólo contribuye al calentamiento global.-<br />
+</div>
+
+<div class="ParallaxContent bg-dark">
+    <div class="container">
+        <div class="headlines">
+            <h2>Generando Entropía</h2>
+            <p class="tabulador">Página en desarrollo...generalmente involutivo.</p>
+        </div>
+    <h3>Sobre esta página:</h3>
+    <p class="tabulador">Esta página está desarrollada en forma totalmente artesanal.</p>
+    <p class="tabulador">Corre en un servidor alojado en una raspberry y con una conexión ADSL doméstica.</p>
+    <p class="tabulador">Sepa disculpar si en algunas ocaciones no responde, está caída o presenta cualquier tipo de problemas.</p>
+
+    </div>
+</div>
+
+<div class="ParallaxImage bg3">
+    <div class="container">
+        <h1><br>Mi tiempo libre. <br></h1>
+    </div>
+</div>	
+
+<div class="ParallaxContent bg-dark">
+    <div class="container">
+<!--
+        <div class="headlines">
+            <h3>Parallax Effect Video Design</h3>
+        </div>
+    -->    
+        <div class="row justify-content-center">
+            
+            <div class="col-4">                
+                <div class="card bg-secondary">
+                    <img class="card-img-top" src="../../static/appGenerandoEntropia/images/fotos/bender.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Chiste de Miércoles.</h4>
+                      <p class="card-text">Cada miércoles un pésimo chiste.</p>
+                      <a href="{% url 'chiste' %}" class="btn btnA">Abrir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card bg-secondary">
+                    <img class="card-img-top" src="../../static/appGenerandoEntropia/images/fotos/arcPresentacion.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Mis cosas</h4>
+                      <p class="card-text">Cosas inútiles.</p>
+                      <a href="{% url 'miscosas' %}" class="btn btnB">Abrir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card bg-secondary">
+                    <img class="card-img-top" src="../../static/appGenerandoEntropia/images/fotos/aikaPelota.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Aika Laperra</h4>
+                      <p class="card-text">Historias de Aika Laperra.</p>
+                      <a href="{% url 'aikalaperra' %}" class="btn btnC">Abrir</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+    </div>
+</div>
+  
+
+<div class="ParallaxImage bg1">
+    <div class="container">
+        <h1>Zona usuarios registrados.</h1>
+    </div>
+</div>	
+
+<div class="ParallaxContent bg-dark">
+    <div class="container">
+        <div class="headlines">
+            <h3>El siguiente contenido puede herir la sensibilidad de los insensibles.</h3>
+            <p class="tabulador">Para ver el siguiente segmento debe estar registrado/da/de/di/do/du</p>
+        </div>
+        <h3>Queda advertido</h3>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card bg-secondary ">
+                        <img class="card-img-top" src="../../static/appGenerandoEntropia/images/fotos/luna.jpg" alt="Card image">
+                        <div class="card-body">
+                        <h4 class="card-title">Mis cosas</h4>
+                        <p class="card-text">Cosas inútiles.</p>
+                        <a href="{% url 'loquenosepuededecir' %}" class="btn btnA">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
