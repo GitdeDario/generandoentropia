@@ -4,9 +4,8 @@
 {% block title %}{% endblock %}
 {% block body %}
 
-<div class="ParallaxVideo">
-    <video autoplay muted loop delay5s class="blurred" style="width: 300px;">
-        <!--<source src="{% static 'appGenerandoEntropia/images/videos/slowFire.mp4' %}" type="video/mp4">-->
+<div id="inicio" class="ParallaxVideo">
+    <video autoplay muted loop delay5s class="blurred">
         <source src="{% static 'appGenerandoEntropia/images/videos/fireplace.mp4' %}" type="video/mp4">
     </video>
     <h1 class="videoText_h">Generando Entropía.</h1> <br/>
@@ -27,7 +26,7 @@
     </div>
 </div>
 
-<div class="ParallaxImage bg3">
+<div id="mitiempolibre" class="ParallaxImage bg3">
     <div class="container">
         <h1><br>Mi tiempo libre. <br></h1>
     </div>
@@ -35,26 +34,21 @@
 
 <div class="ParallaxContent bg-dark">
     <div class="container">
-<!--
-        <div class="headlines">
-            <h3>Parallax Effect Video Design</h3>
-        </div>
-    -->    
         <div class="row justify-content-center">
             
-            <div class="col-4">                
-                <div class="card bg-secondary">
+            <div class="paddingCondicional col-sm-4 col-12">                
+                <div class="card bg-secondary igualoAlturas">
                     <img class="card-img-top" src="../../static/appGenerandoEntropia/images/fotos/bender.jpg" alt="Card image">
                     <div class="card-body">
-                      <h4 class="card-title">Chiste de Miércoles.</h4>
+                      <h4 class="card-title">Chiste de Miércoles</h4>
                       <p class="card-text">Cada miércoles un pésimo chiste.</p>
                       <a href="{% url 'chiste' %}" class="btn btnA">Abrir</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-4">
-                <div class="card bg-secondary">
+            <div class="paddingCondicional col-sm-4 col-12">
+                <div class="card bg-secondary igualoAlturas">
                     <img class="card-img-top" src="../../static/appGenerandoEntropia/images/fotos/arcPresentacion.jpg" alt="Card image">
                     <div class="card-body">
                       <h4 class="card-title">Mis cosas</h4>
@@ -64,8 +58,8 @@
                 </div>
             </div>
 
-            <div class="col-4">
-                <div class="card bg-secondary">
+            <div class="col-sm-4 col-12">
+                <div class="card bg-secondary igualoAlturas">
                     <img class="card-img-top" src="../../static/appGenerandoEntropia/images/fotos/aikaPelota.png" alt="Card image">
                     <div class="card-body">
                       <h4 class="card-title">Aika Laperra</h4>
@@ -78,13 +72,12 @@
         </div> 
     </div>
 </div>
-  
 
-<div class="ParallaxImage bg1">
+<div id="zonausuariosreg" class="ParallaxImage bg1">
     <div class="container">
         <h1>Zona usuarios registrados.</h1>
     </div>
-</div>	
+</div>
 
 <div class="ParallaxContent bg-dark">
     <div class="container">
@@ -95,7 +88,7 @@
         <h3>Queda advertido</h3>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-4">
+                <div class="col-sm-8 col-12">
                     <div class="card bg-secondary ">
                         <img class="card-img-top" src="../../static/appGenerandoEntropia/images/fotos/luna.jpg" alt="Card image">
                         <div class="card-body">

@@ -1,3 +1,7 @@
+h1{
+  font-size: 8vw !important;
+}
+
 %videoText{
   color: white;
   text-align: center;
@@ -5,7 +9,7 @@
   .videoText_h{
       @extend %videoText;
       font-family: 'Permanent Marker', cursive;
-      font-size:8vw;
+      font-size:8vw !important;
   }
 
   .videoText_p{
@@ -97,4 +101,16 @@
 
   .tabulador{
     padding-left:5em
+  }
+
+  @media only screen and (max-width: 576px) { 
+    .paddingCondicional{
+      padding-bottom: 5%;
+    }
+  }
+  
+  @media only screen and (min-width:576px) and (max-width: 991px) {
+    .igualoAlturas{
+      height: 350px;
+    }
   }
