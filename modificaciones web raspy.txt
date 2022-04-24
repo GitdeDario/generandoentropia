@@ -1,0 +1,3 @@
+Ir a ese dir y ejecutar pull con sudo 
+
+    pi@raspberrypi:/home/debian/despliegue/generandoentropia$ sudo git pull
