@@ -8,5 +8,5 @@ urlpatterns = [
     path("loquenosepuededecir", views.loquenosepuededecir, name="loquenosepuededecir"),
     path("aikalaperra", views.aikalaperra, name="aikalaperra"),
     path("loquenosepuededecirLogueado", views.loquenosepuededecirLogueado, name="loquenosepuededecirLogueado"),
-    #path("logout",views.logout_view, name="logout"),
+    path("logout",views.logout_view, name="logout"),
 ]

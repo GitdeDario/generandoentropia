@@ -4,7 +4,6 @@ from django.shortcuts import render
 from django.urls import reverse
 from django.contrib.auth import authenticate, login, logout
 
-
 # Create your views here.
 def index(request):
     return render(request, "appGenerandoEntropia/index.html")
@@ -43,6 +42,10 @@ def loquenosepuededecirLogueado(request):
     if not request.user.is_authenticated:
         return HttpResponseRedirect(reverse("loquenosepuededecir"))
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
+
+def logout_view(request):
+    logout(request)
+    return render(request, "appGenerandoEntropia/logout.html")
 
 def aikalaperra(request):
     return render(request, "appGenerandoEntropia/aikalaperra.html")
