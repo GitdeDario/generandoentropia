@@ -31,7 +31,7 @@ def loquenosepuededecir(request):
             return HttpResponseRedirect(reverse("loquenosepuededecirLogueado"))
         #Si el usuario y/o contraseña no son correctos, nos redirige a la página para loguearnos, con un mensaje del error
         else:
-            return render(request, "appGenerandoEntropia/loquenosepuededecir.htom", {
+            return render(request, "appGenerandoEntropia/loquenosepuededecir.html", {
                 "message": "usuario y/o contraseña inválido"
             })
 
