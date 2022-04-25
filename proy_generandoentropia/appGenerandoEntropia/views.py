@@ -2,7 +2,10 @@ import re
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
+from django.db import IntegrityError
 from django.contrib.auth import authenticate, login, logout
+
+from .models import User
 
 # Create your views here.
 def index(request):
@@ -50,3 +53,28 @@ def logout_view(request):
 def aikalaperra(request):
     return render(request, "appGenerandoEntropia/aikalaperra.html")
 
+def register(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        email = request.POST["email"]
+
+        # Ensure password matches confirmation
+        password = request.POST["password"]
+        confirmation = request.POST["confirmation"]
+        if password != confirmation:
+            return render(request, "appGenerandoEntropia/register.html", {
+                "message": "Las contraseñas no son iguales."
+            })
+
+        # Attempt to create new user
+        try:
+            user = User.objects.create_user(username, email, password)
+            user.save()
+        except IntegrityError:
+            return render(request, "appGenerandoEntropia/register.html", {
+                "message": "El usuario ya existe."
+            })
+        login(request, user)
+        return HttpResponseRedirect(reverse("loquenosepuededecirLogueado"))
+    else:
+        return render(request, "appGenerandoEntropia/register.html")

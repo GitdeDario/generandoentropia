@@ -9,4 +9,6 @@ urlpatterns = [
     path("aikalaperra", views.aikalaperra, name="aikalaperra"),
     path("loquenosepuededecirLogueado", views.loquenosepuededecirLogueado, name="loquenosepuededecirLogueado"),
     path("logout",views.logout_view, name="logout"),
+    path("register", views.register, name="register"),
+
 ]
