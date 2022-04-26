@@ -9,7 +9,7 @@
 
 <h1> Aún no tenemos demasiado contenido, pero ya podemos crear usuarios!</h1>
 
-<h1>¡Bienvenido, {{ request.user.username }}!</h1>
+<h1>¡Bienvenido, {{ request.user.username | capfirst }}!</h1>
 
 <ul>
     <li>Usuario: {{ request.user.username }}</li>
