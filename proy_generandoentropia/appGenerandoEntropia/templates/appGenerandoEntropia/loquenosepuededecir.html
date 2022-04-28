@@ -3,26 +3,34 @@
 
 {% block title %}{% endblock %}
 {% block body %}
-<h1>PÁGINA EN CONSTRUCCIÓN.</h1>
-<img src="https://lh5.googleusercontent.com/-9jrN85WBl2s/U6C6CEuAiQI/AAAAAAAAAA4/CltTv8ziyMM/s400/obres5.gif">
-<h3>Esto será la sección  Lo que no se puede decir.</h3>
+    <h2>PÁGINA EN CONSTRUCCIÓN.</h2>
+    <img src="https://lh5.googleusercontent.com/-9jrN85WBl2s/U6C6CEuAiQI/AAAAAAAAAA4/CltTv8ziyMM/s400/obres5.gif">
+    <h3>Esto será la sección "Lo que no se puede decir."</h3>
 
     {% if message %}
         <div>{{message}}</div>
     {% endif %}
+    <div class="container">
+        <form acction="{% url 'loquenosepuededecir' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input class="form-control" autofocus type="text" name="username" placeholder="Nombre de usuario">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Contraseña:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+    </div>
 
-    <form acction="{% url 'loquenosepuededecir' %}" method="post">
-        {% csrf_token %}
-        <input type="text", name="username", placeholder="usuario">
-        <input type="password", name="password", placeholder="contraseña">
-        <input type="submit", value="Ingresar">
-    </form>
-
-<div>
-    ¿Todavía no es un usuario registrado? <a href="{% url 'register' %}">Registrese aquí.</a>
-</div>
-<div>
-    <a href="{% url 'index' %}">Volver</a>
-</div>
+    <hr>
+    <div>
+        ¿Todavía no es un usuario registrado? <a href="{% url 'register' %}">Registrese aquí.</a>
+    </div>
+    <div>
+        <a href="{% url 'index' %}">Volver</a>
+    </div>
 
 {% endblock %}

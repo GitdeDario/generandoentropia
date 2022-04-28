@@ -4,6 +4,28 @@
 {% block title %}{% endblock %}
 {% block body %}
 
+<!--Barra superior-->   
+<nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Menú</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-fw fa-home"></i>inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mitiempolibre"><i class="fa fa-cog fa-spin fa-1x fa-hourglass-end"></i> Mi tiempo libre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#zonausuariosreg"><i class="fa fa-fw fa-user"></i>Usuarios</a>
+        </li>    
+      </ul>
+    </div>  
+</nav>
+<br>
+
 <div id="inicio" class="ParallaxVideo">
     <video autoplay muted loop delay5s class="blurred">
         <source src="{% static 'appGenerandoEntropia/images/videos/fireplace.mp4' %}" type="video/mp4">

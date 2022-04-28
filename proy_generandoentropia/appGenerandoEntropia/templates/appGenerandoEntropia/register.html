@@ -10,23 +10,32 @@
         <div>{{ message }}</div>
     {% endif %}
 
-    <form action="{% url 'register' %}" method="post">
+    <div class="container">
+        <form action="{% url 'register' %}" method="post">
         {% csrf_token %}
         <div class="form-group">
+            <label for="username">Nombre de usuario:</label>
             <input class="form-control" autofocus type="text" name="username" placeholder="Nombre de usuario">
         </div>
         <div class="form-group">
-            <input class="form-control" type="email" name="email" placeholder="PUEDE DEJAR ESTE CAMPO VACÍO">
+            <label for="email">Correo:</label>
+            <input type="email" class="form-control" id="email" placeholder="e-mail. Puede dejar este campo vacio." name="email">
         </div>
         <div class="form-group">
-            <input class="form-control" type="password" name="password" placeholder="Contraseña">
+            <label for="pwd">Contraseña:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="password">
         </div>
         <div class="form-group">
-            <input class="form-control" type="password" name="confirmation" placeholder="Confirmar contraseña">
+            <label for="pwd">Confirmar contraseña:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Repita la contraseña" name="confirmation">
         </div>
-        <input class="btn btn-primary" type="submit" value="Register">
-    </form>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+    </div>
 
+<hr>
     ¿Ya posee una cuenta? <a href="{% url 'loquenosepuededecir' %}">Ingrese aquí.</a>
+<hr>
+
 
 {% endblock %}
