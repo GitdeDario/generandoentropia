@@ -64,6 +64,7 @@ h1{
   background-image: url("https://ichef.bbci.co.uk/news/800/cpsprodpb/35F4/production/_116221831_mediaitem116221830.jpg");
 }
 
+
 .ParallaxContent {
   background: none repeat scroll 0 0 #2581e8;
   padding: 42px 0;
@@ -81,11 +82,15 @@ h1{
 }
 
 .ParallaxVideo video {
-  min-width: 100%;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
-  z-index: -999;
+  left: 0;
+  z-index: -1;
 }
+
 .ParallaxVideo h1 {
   color: #fff;
   font-size: 76px;
