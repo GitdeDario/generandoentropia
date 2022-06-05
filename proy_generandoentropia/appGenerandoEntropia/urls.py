@@ -10,5 +10,8 @@ urlpatterns = [
     path("loquenosepuededecirLogueado", views.loquenosepuededecirLogueado, name="loquenosepuededecirLogueado"),
     path("logout",views.logout_view, name="logout"),
     path("register", views.register, name="register"),
+    path("estroncio", views.estroncio, name="estroncio"),
+    path("reactorArk", views.reactorArk, name="reactorArk"),
+    path("amigurumis", views.amigurumis, name="amigurumis"),
 
 ]

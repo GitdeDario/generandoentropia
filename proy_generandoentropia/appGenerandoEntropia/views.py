@@ -53,6 +53,15 @@ def logout_view(request):
 def aikalaperra(request):
     return render(request, "appGenerandoEntropia/aikalaperra.html")
 
+def estroncio(request):
+    return render(request, "appGenerandoEntropia/estroncio.html")
+    
+def reactorArk(request):
+    return render(request, "appGenerandoEntropia/reactorArk.html")
+
+def amigurumis(request):
+    return render(request, "appGenerandoEntropia/historiasDeAmigurumis.html")
+
 def register(request):
     if request.method == "POST":
         username = request.POST["username"]
