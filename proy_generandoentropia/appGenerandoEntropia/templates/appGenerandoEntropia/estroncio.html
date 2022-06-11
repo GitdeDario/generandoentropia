@@ -117,8 +117,19 @@
 </div>
 
 <div>
-  <h3 style="text-align:center; margin-top:2% ;">bla lba bla</h3>
-  <p style="margin-right: 5%; margin-left:5%;">Reproductor de música basado en rune audio.</p>
+  <h3 style="text-align:center; margin-top:2% ;">Estroncio.</h3>
+  <p style="margin-right: 5%; margin-left:5%;">
+    Estroncio es un reproductor de mp3 que corre en una raspberry pi. <br>
+    Usa una imagen de runeaudio <a href="https://www.runeaudio.com/" style="color: yellow;">https://www.runeaudio.com/</a> 
+    Estas imágenes muestran el proceso de construcción y desarrollo.
+    Se desarrolló un programa en python que también corre en la raspberry y permite interactuar el hardware que se construyó, con rune audio. <br>
+    El hardware cosiste en motores, pulsadores, display LCD, etc; que pretende simular un tocadiscos antiguo (aún en construcción). El display muestra 
+    nombre de la canción que se está reproduciendo, porcetaje de avance del tema, volumen, etc.<br>
+    De momento las pruebas preliminares son funcionales. <br>
+    Rune audio tiene una interfaz gráfica que permite seleccionar el tema musical, modificar el volumen, etc. Estas modificaciones se ven reflejadas
+    en estroncio y vice versa. Es decir, si por ejemplo se modifica el volumen en estroncio, este cambio se ve reflejado en la interfaz gráfica de rune audio 
+    y si el volumen se modifica en la interfaz gráfica de rune audio, el cambio se ve reflejado en estroncio.<br>
+  </p>
 </div>  
 
 {% endblock %}
