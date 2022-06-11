@@ -17,6 +17,15 @@ def chiste(request):
 def miscosas(request):
     return render(request, "appGenerandoEntropia/miscosas.html")
 
+def estroncio(request):
+    return render(request, "appGenerandoEntropia/estroncio.html")
+
+def reactorArk(request):
+    return render(request, "appGenerandoEntropia/reactorArk.html")
+
+def amigurumis(request):
+    return render(request, "appGenerandoEntropia/amigurumis.html")
+
 def loquenosepuededecir(request):
     #return render(request, "appGenerandoEntropia/loquenosepuededecir.html")
     if request.method == "POST":
