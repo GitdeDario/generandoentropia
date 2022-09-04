@@ -19,7 +19,8 @@
 
 <a href="{% url 'index' %}">Volver</a>
 
-{% if user.username == dario %}
+{% if user.username == "dario" %}
     <a href="{% url 'loquenosepuededecirLogueado' %}"><button>LED1 ON</button></a>
 {% endif %}
+
 {% endblock %}
