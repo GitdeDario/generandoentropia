@@ -1,11 +1,17 @@
 import re
+from urllib import request
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 from django.db import IntegrityError
 from django.contrib.auth import authenticate, login, logout
-
 from .models import User
+
+LED = 22
+import RPi.GPIO as GPIO
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+GPIO.output(LED, 0)
 
 # Create your views here.
 def index(request):
@@ -53,6 +59,9 @@ def loquenosepuededecirLogueado(request):
     # If no user is signed in, return to login page:     
     if not request.user.is_authenticated:
         return HttpResponseRedirect(reverse("loquenosepuededecir"))
+    return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
+def led1on():
+    GPIO.output(LED,1)
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
 
 def logout_view(request):
