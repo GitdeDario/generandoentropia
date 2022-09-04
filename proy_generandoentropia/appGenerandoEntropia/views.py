@@ -10,7 +10,7 @@ from .models import User
 LED = 22
 import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
-GPIO.setup(LED, GPIO.OUTPUT)
+GPIO.setup(LED, GPIO.OUT)
 GPIO.setmode(GPIO.BOARD)
 GPIO.output(LED, 0)
 
