@@ -14,6 +14,7 @@ urlpatterns = [
     path("reactorArk", views.reactorArk, name="reactorArk"),
     path("amigurumis", views.amigurumis, name="amigurumis"),
     path("led1on", views.led1on, name="led1on"),
+    path("led1off", views.led1off, name="led1off"),
 
 
 

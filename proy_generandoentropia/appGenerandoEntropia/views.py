@@ -62,6 +62,9 @@ def loquenosepuededecirLogueado(request):
 def led1on(request):
     GPIO.output(LED,1)
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
+def led1off(request):
+    GPIO.output(LED,0)
+    return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
 
 def logout_view(request):
     logout(request)
