@@ -1,5 +1,3 @@
-import re
-from urllib import request
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
@@ -61,9 +59,8 @@ def loquenosepuededecirLogueado(request):
     if not request.user.is_authenticated:
         return HttpResponseRedirect(reverse("loquenosepuededecir"))
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
-def led1on():
+def led1on(request):
     GPIO.output(LED,1)
-    print("#######################  ENCIENDE LED ##################################")
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
 
 def logout_view(request):

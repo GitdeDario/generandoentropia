@@ -13,6 +13,7 @@ urlpatterns = [
     path("estroncio", views.estroncio, name="estroncio"),
     path("reactorArk", views.reactorArk, name="reactorArk"),
     path("amigurumis", views.amigurumis, name="amigurumis"),
+    path("led1on", views.led1on, name="led1on"),
 
 
 
