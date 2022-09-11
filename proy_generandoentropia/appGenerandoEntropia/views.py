@@ -5,19 +5,19 @@ from django.db import IntegrityError
 from django.contrib.auth import authenticate, login, logout
 from .models import User
 
-LED = 22
-import RPi.GPIO as GPIO
-GPIO.setmode(GPIO.BOARD)
-GPIO.setwarnings(False)
-GPIO.setup(LED, GPIO.OUT)
-GPIO.output(LED, 0)
+# LED = 22
+# import RPi.GPIO as GPIO
+# GPIO.setmode(GPIO.BOARD)
+# GPIO.setwarnings(False)
+# GPIO.setup(LED, GPIO.OUT)
+# GPIO.output(LED, 0)
 
 # Create your views here.
 def index(request):
     return render(request, "appGenerandoEntropia/index.html")
 
-def chiste(request):
-    return render(request, "appGenerandoEntropia/chiste.html")
+def losMalosTenianRazon(request):
+    return render(request, "appGenerandoEntropia/losMalosTenianRazon.html")
 
 def miscosas(request):
     return render(request, "appGenerandoEntropia/miscosas.html")
@@ -59,11 +59,14 @@ def loquenosepuededecirLogueado(request):
     if not request.user.is_authenticated:
         return HttpResponseRedirect(reverse("loquenosepuededecir"))
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
+    
 def led1on(request):
-    GPIO.output(LED,1)
+    #GPIO.output(LED,1)
+    print("ON")
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
 def led1off(request):
-    GPIO.output(LED,0)
+    #GPIO.output(LED,0)
+    print("OFF")
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
 
 def logout_view(request):
