@@ -70,6 +70,15 @@ h1{
   padding-top: 50px;
 }
 
+.ParallaxImage2 {
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10px;
+  padding-top:750px;
+}
+
 .ParallaxImage h1 {
   font-weight: 700;
   font-size: 76px;
