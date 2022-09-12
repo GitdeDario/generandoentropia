@@ -18,11 +18,11 @@ h1{
   font-size: 2vw;
 }
 
-/* .contenedor{
+.contenedor{
   position: relative;
   display: inline-block;
   text-align: center;
-} */
+} 
 
 .textoLosMalosTenianRazon{
   font-family: "Permanent Marker";
@@ -70,15 +70,6 @@ h1{
   padding-top: 50px;
 }
 
-.ParallaxImage2 {
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 10px;
-  padding-top:750px;
-}
-
 .ParallaxImage h1 {
   font-weight: 700;
   font-size: 76px;
@@ -97,11 +88,6 @@ h1{
 /*pingüinos abrazados*/
 .bg3 {
   background-image: url("https://ichef.bbci.co.uk/news/800/cpsprodpb/35F4/production/_116221831_mediaitem116221830.jpg");
-}
-
-/*lamparitas*/
-.bg4 {
-  background-image: url("../appGenerandoEntropia/images/fotos/misCosas/losMalosTenianRazon/light-bulbs.jpg");
 }
 
 
