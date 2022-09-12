@@ -4,11 +4,21 @@
 {% block title %}{% endblock %}
 {% block body %}
 
+<div id="inicio" class="ParallaxVideo">
+    <video id="videoBG" autoplay muted loop delay5s class="blurred">
+        <source src="{% static 'appGenerandoEntropia/images/videos/fireplace.mp4' %}" type="video/mp4">
+        <source src="{% static 'appGenerandoEntropia/images/videos/fireplace.webm' %}" type="video/mp4">
+    </video>
+    <h1 class="textoLosMalosTenianRazon">Generando Entropía.</h1> <br/>
+    <p class="textoAUTORLosMalosTenianRazon">Una página que sólo contribuye al calentamiento global.-<br />
+</div>
+
+<!--
 <div class="contenedor">
     <img src="{% static 'appGenerandoEntropia/images/fotos/misCosas/losMalosTenianRazon/light-bulbs.jpg' %}" width="100%" />
     <div class="textoLosMalosTenianRazon">Antes de juzgar, asegúrate de que eres perfecto </div>
     <div class="textoAUTORLosMalosTenianRazon">Joker.-</div>
 </div>
-
+-->
 <a href="{% url 'index' %}">Volver</a>
 {% endblock %}
