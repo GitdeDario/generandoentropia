@@ -27,7 +27,7 @@ h1{
 .textoLosMalosTenianRazon{
   font-family: "Permanent Marker";
   font-size: 3vw !important;
-  position: absolute;
+  
   top: 30%;
   left: 50%;
   transform: translate(-5%, -50%);
