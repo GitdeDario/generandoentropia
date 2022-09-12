@@ -17,6 +17,12 @@ h1{
   font-size: 2vw;
 }
 
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
 .textoLosMalosTenianRazon{
   font-family: "Permanent Marker";
   font-size: 3vw !important;
@@ -26,6 +32,7 @@ h1{
   transform: translate(-5%, -50%);
   color: white;
 }
+
 .textoAUTORLosMalosTenianRazon{
   font-family: "Permanent Marker", cursive; 
   font-size: 3vw !important;
