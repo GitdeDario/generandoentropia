@@ -1,17 +1,44 @@
 {% extends "appGenerandoEntropia/layout.html" %}
 {% load static %}
-{%load styles%}
 
 {% block title %}{% endblock %}
 {% block body %}
 
     <div class="contenedor">
         <img src="{% static 'appGenerandoEntropia/images/fotos/misCosas/losMalosTenianRazon/light-bulbs.jpg' %}" width="100%" />
-        <div class="centrado">Centrado</div>
+        <div class="textoLosMalosTenianRazon">Centrado</div>
     </div>
   
   
+  <style>
+  .contenedor{
+      position: relative;
+      display: inline-block;
+      text-align: center;
+  }
+   
   
+  .textoLosMalosTenianRazon{
+  font-family: "Permanent Marker";
+  font-size: 3vw !important;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-5%, -50%);
+  color: white;
+}
+.textoAUTORLosMalosTenianRazon{
+  font-family: "Permanent Marker", cursive; 
+  font-size: 3vw !important;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-5%, -50%);
+  color: white;
+}
+
+  </style>
+
 <!--
 <div class="contenedor">
     <img src="{% static 'appGenerandoEntropia/images/fotos/misCosas/losMalosTenianRazon/light-bulbs.jpg' %}" width="100%" />
