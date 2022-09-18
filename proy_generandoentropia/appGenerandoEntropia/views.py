@@ -1,4 +1,4 @@
-PRODUCCION = False
+PRODUCCION = True
 
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
