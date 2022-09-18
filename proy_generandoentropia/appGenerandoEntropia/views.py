@@ -1,3 +1,5 @@
+PRODUCCION = False
+
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
@@ -6,11 +8,12 @@ from django.contrib.auth import authenticate, login, logout
 from .models import User
 
 LED = 22
-import RPi.GPIO as GPIO
-GPIO.setmode(GPIO.BOARD)
-GPIO.setwarnings(False)
-GPIO.setup(LED, GPIO.OUT)
-GPIO.output(LED, 0)
+if PRODUCCION:
+    import RPi.GPIO as GPIO
+    GPIO.setmode(GPIO.BOARD)
+    GPIO.setwarnings(False)
+    GPIO.setup(LED, GPIO.OUT)
+    GPIO.output(LED, 0)
 
 # Create your views here.
 def index(request):
@@ -61,10 +64,12 @@ def loquenosepuededecirLogueado(request):
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
     
 def led1on(request):
-    GPIO.output(LED,1)
+    if PRODUCCION:
+        GPIO.output(LED,1)
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
 def led1off(request):
-    GPIO.output(LED,0)
+    if PRODUCCION:
+        GPIO.output(LED,0)
     return render(request, "appGenerandoEntropia/loquenosepuededecirLogueado.html")
 
 def logout_view(request):
