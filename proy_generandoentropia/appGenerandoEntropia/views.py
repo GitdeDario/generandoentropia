@@ -1,4 +1,4 @@
-PRODUCCION = True
+PRODUCCION = False
 
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
@@ -31,8 +31,8 @@ def estroncio(request):
 def reactorArk(request):
     return render(request, "appGenerandoEntropia/reactorArk.html")
 
-def amigurumis(request):
-    return render(request, "appGenerandoEntropia/amigurumis.html")
+def ardupiano(request):
+    return render(request, "appGenerandoEntropia/ardupiano.html")
 
 def loquenosepuededecir(request):
     #return render(request, "appGenerandoEntropia/loquenosepuededecir.html")
