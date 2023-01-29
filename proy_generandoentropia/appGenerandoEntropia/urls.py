@@ -12,7 +12,7 @@ urlpatterns = [
     path("register", views.register, name="register"),
     path("estroncio", views.estroncio, name="estroncio"),
     path("reactorArk", views.reactorArk, name="reactorArk"),
-    path("ardupiano", views.ardupiano, name="ardupiano"),
+    path("ardupiano", views.eNanoPiano, name="eNanoPiano"),
     #https://www.hackster.io/adhyoksh/controlling-gpio-pins-of-raspberry-pi-with-web-page-2d5bdc
     path("led1on", views.led1on, name="led1on"),
     path("led1off", views.led1off, name="led1off"),

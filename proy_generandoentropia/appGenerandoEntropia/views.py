@@ -31,8 +31,8 @@ def estroncio(request):
 def reactorArk(request):
     return render(request, "appGenerandoEntropia/reactorArk.html")
 
-def ardupiano(request):
-    return render(request, "appGenerandoEntropia/ardupiano.html")
+def eNanoPiano(request):
+    return render(request, "appGenerandoEntropia/eNanoPiano.html")
 
 def loquenosepuededecir(request):
     #return render(request, "appGenerandoEntropia/loquenosepuededecir.html")
