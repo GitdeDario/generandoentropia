@@ -34,8 +34,8 @@ def reactorArk(request):
 def eNanoPiano(request):
     return render(request, "appGenerandoEntropia/eNanoPiano.html")
 
-def pruebas_IA(request):
-    return render(request, "appGenerandoEntropia/pruebas_IA.html")
+def numeros_IA(request):
+    return render(request, "appGenerandoEntropia/numeros_IA.html")
 
 def loquenosepuededecir(request):
     #return render(request, "appGenerandoEntropia/loquenosepuededecir.html")
